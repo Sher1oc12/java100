@@ -1,0 +1,28 @@
+DDL -数据库操作语法：
+
+SHOW DATABASES;
+CREATE DATABASE数据库名
+USE数据库名;
+SELECT DATABASE();
+DROP DATABASE数据库名;
+
+DDL-表操作
+
+SHOW TABLES ;
+CREATE TABLE表名(字段字段类型，字段字段类型);
+DESC表名;
+SHOW CREATE TABLE表名;
+ALTER TABLE表名ADD/MODIFY/CHANGE/DROP/RENAME TO .. ;
+DROP TABLE表名;
+
+
+
+create table emp(
+	id int comment '编号',
+	workno varchar(10) comment '工号',
+	name varchar(10) comment '姓名',
+	gender char(1) comment '性别',
+	age tinyint unsigned comment '年龄',
+	idcard char(18) comment '身份证号',
+	entrydate date comment '入职时间'
+) comment '员工表';
